@@ -1,0 +1,12 @@
+@layer bootstrap, icons, custom;
+
+@import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css) layer(icons);
+@import url(../lib/bootstrap.min.css) layer(bootstrap);
+@import url(./custom.css) layer(custom);
+
+
+header{
+  & img{
+    width: 130px;
+  }
+}
