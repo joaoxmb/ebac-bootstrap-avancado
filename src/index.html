@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <header class="bg-black bg-opacity-50 w-100">
+  <header class="w-100 position-absolute top-0 z-2">
     <div class="container py-1">
       <div class="row">
         <div class="col-12 col-lg-2 d-flex align-items-lg-center">
@@ -55,8 +57,8 @@
                       <li class="dropdown-item">
                         <a href="#camisas>Camisas</a>
                       </li>
-                      <li class="dropdown-item">
-                        <a href="#bermudas">Bermudas</a>
+                      <li class=" dropdown-item">
+                          <a href="#bermudas">Bermudas</a>
                       </li>
                       <li class="dropdown-item">
                         <a href="#calcas">Calças</a>
@@ -93,8 +95,39 @@
       </div>
     </div>
   </header>
+  <div id="cover" class="carousel slide" data-bs-ride="carousel">
+    <button type="button" class="carousel-control-prev" data-bs-target="#cover" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button type="button" class="carousel-control-next" data-bs-target="#cover" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div>
+          <img class="w-100" src="../public/images/capa-1.png" alt="" />
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <img class="w-100" src="../public/images/capa-2.png" alt="" />
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <img class="w-100" src="../public/images/capa-3.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" class="active" data-bs-target="#cover" data-bs-slide-to="0"></button>
+      <button type="button" data-bs-target="#cover" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#cover" data-bs-slide-to="2"></button>
+    </div>
+  </div>
   <script src="../lib/jquery-3.7.1.min.js"></script>
   <script src="../lib/bootstrap.bundle.min.js"></script>
   <script type="module" src="./script.js"></script>
 </body>
+
 </html>
