@@ -63,6 +63,7 @@ header {
   & img {
     object-fit: cover;
     object-position: center;
+    min-height: 100vh;
   }
   & .carousel-item{
     overflow: hidden;
@@ -73,6 +74,7 @@ header {
   }
 }
 
+/* low and medium size */
 @media only screen and (max-width: 991px) {
   header {
     & .dropdown-menu {
@@ -93,7 +95,7 @@ header {
     }
   }
 }
-
+/* large size */
 @media only screen and (min-width: 992px) {
   header {
     & .row>div:first-child {
