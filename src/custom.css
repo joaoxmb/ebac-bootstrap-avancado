@@ -8,6 +8,10 @@
 }
 
 header {
+  background-color: rgba(0,0,0,.85);
+  & img{
+    width: 130px;
+  }
   & .hamburger {
     border: none;
     outline: none;
@@ -53,8 +57,7 @@ header {
   }
 }
 
-.carousel {
-
+#cover {
   & .carousel-indicators [data-bs-target] {
     height: 5px;
     margin-bottom: 5px;
@@ -71,6 +74,28 @@ header {
   & .carousel-item > div{
     display: flex;
     justify-content: center;
+  }
+}
+
+.products{
+  & .discount{
+    left: 0;
+    top: 0;
+  }
+  & .type-product{
+    font-size: 0.8rem;
+  }
+  & img{
+    width: 100%;
+  }
+}
+.categories{
+  & li > a{
+    background-color: black;
+  }
+  & img{
+    width: 100%;
+    opacity: 0.85;
   }
 }
 
