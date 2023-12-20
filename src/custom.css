@@ -33,7 +33,7 @@ header {
     &.active,
     &:hover,
     &[aria-expanded="true"] {
-      color: var(--color-red) !important;
+      color: var(--color-red);
     }
   }
 
@@ -96,6 +96,19 @@ header {
   & img{
     width: 100%;
     opacity: 0.85;
+  }
+}
+
+footer{
+  & .dropdown-toggle{
+    cursor: pointer;
+  }
+  & .nav-link, & .dropdown-toggle{
+    color: #c9c9c9;
+
+    &:hover{
+      color: var(--color-red);
+    }
   }
 }
 
