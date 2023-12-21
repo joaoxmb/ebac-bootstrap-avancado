@@ -92,10 +92,15 @@ header {
 .categories{
   & li > a{
     background-color: black;
-  }
-  & img{
-    width: 100%;
-    opacity: 0.85;
+
+    & img{
+      width: 100%;
+      opacity: 0.85;
+      transition: opacity .3s;
+    }
+    &:hover img{
+      opacity: 1;
+    }
   }
 }
 
